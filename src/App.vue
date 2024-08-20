@@ -1,28 +1,13 @@
 <template>
-  <div id="app">
-    <h1>Vue.js To-Do App</h1>
-    <ToDoList />
-  </div>
+  <v-app>
+    <v-container>
+      <router-view />  <!-- 라우터가 렌더링할 컴포넌트가 여기에 표시됩니다. -->
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-import ToDoList from './components/ToDoList.vue';
-
 export default {
   name: 'App',
-  components: {
-    ToDoList
-  }
-};
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-</style>
+</script>
