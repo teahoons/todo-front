@@ -32,7 +32,7 @@ const actions = {
       const response = await postService.getPosts();
       commit('SET_POSTS', response.data);
     } catch (error) {
-      console.error('Failed to load posts:', error);
+      //console.error('Failed to load posts:', error);
     }
   },
   async loadPostDetail({ commit }, postId) { // 추가된 부분
@@ -49,7 +49,7 @@ const actions = {
       const response = await postService.createPost(newPost);
       commit('ADD_POST', response.data);
     } catch (error) {
-      console.error('Failed to add post:', error);
+     // console.error('Failed to add post:', error);
     }
   },
   async updatePost({ commit }, post) {
